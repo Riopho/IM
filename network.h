@@ -36,6 +36,11 @@ class Network
             return bind(_socket_fd, (struct sockaddr*)&selfAddr, sizeof(selfAddr));
         }
 
+        int Getfd()
+        {
+            return _socket_fd;
+        }
+
     private:
         int _socket_fd;
         sockaddr_in selfAddr;

@@ -1,5 +1,5 @@
 demo:main.o network.o
-	g++ -o demo -g main.o network.o
+	g++ -o demo -g -pthread main.o network.o
 
 main.o:main.cpp network.cpp network.h
 	g++ -c -g main.cpp
